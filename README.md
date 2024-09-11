@@ -38,14 +38,6 @@ In this Digital Clock project, an Arduino Uno is programmed to control a functio
      <li>Supplier: Amazon</li>
    </ul>
   </li>
-  <li><strong>Potentiometer</strong>
-    <ul>
-      <li>Manufacturer: Flutesan</li>
-      <li>Specifications: 10kΩ, Linear Taper, 1/4W, Rotary, 3-pin</li>
-      <li><a href="https://www.amazon.com/Potentiometer-Breadboard-Resistors-Assortment-Compatible/dp/B09G9TBY38/ref=sr_1_17_sspa?th=1">Potentiometer Datasheet</a></li>
-      <li>Supplier: Amazon</li>
-    </ul>
-  </li>
   <li><strong>Pushbutton x 4</strong>
     <ul>
       <li>Manufacturer: Wurth Electronik</li>
@@ -66,6 +58,6 @@ In this Digital Clock project, an Arduino Uno is programmed to control a functio
 
 <h2>Schematic:</h2>
 
-<img src="https://github.com/user-attachments/assets/9280c0fb-1601-4e2c-9b2b-81215b28f4d5"/>
+<img src="https://github.com/user-attachments/assets/c259330a-3a83-4f3d-b0c7-5018a0babfdd"/>
 <br />
 <br />
