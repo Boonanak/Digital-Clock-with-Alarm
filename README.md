@@ -30,6 +30,14 @@ In this Digital Clock project, an Arduino Uno is programmed to control a functio
       <li>Supplier: Mouser</li>
     </ul>
   </li>
+  <li><strong>I2C Backpack Module for LCD</strong>
+   <ul>
+     <li>Manufacturer: Comimark</li>
+     <li>Specifications: 5V, I2C Interface, PCF8574T IC</li>
+     <li><a href="https://www.amazon.com/Comimark-PCF8574-PCF8574T-Expander-Raspberry/dp/B07X3KWQZ7/ref=sr_1_4">Datasheet</a></li>
+     <li>Supplier: Amazon</li>
+   </ul>
+  </li>
   <li><strong>Potentiometer</strong>
     <ul>
       <li>Manufacturer: Flutesan</li>
