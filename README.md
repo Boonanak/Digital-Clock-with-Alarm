@@ -1,6 +1,6 @@
 <h1>Digital Clock with Alarm</h1>
 
- ### [YouTube Demonstration (In Work)](INSERTLINK)
+ ### [YouTube Demonstration](https://youtu.be/wvlziquP9fc)
 
 <h2>Description</h2>
 In this Digital Clock project, an Arduino Uno is programmed to control a functional clock system. Users can set both the current time (hours and minutes) and the alarm time through a user interface consisting of buttons. The current time is continuously displayed on a Liquid Crystal Display (LCD) with optional backlighting for better visibility. The clock is powered through a USB connection with the Arduino. When the set alarm time is reached, a piezo buzzer sounds and the clock stops. The system is programmed using the Arduino IDE and includes error handling to manage incorrect time or alarm settings.
