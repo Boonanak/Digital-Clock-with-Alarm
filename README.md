@@ -73,7 +73,7 @@ In this Digital Clock project, an Arduino Uno is programmed to control a functio
 <div style="text-align: center;">
     LCD Setup: <br/>
     <img src="https://github.com/user-attachments/assets/19bdf777-171b-4573-8991-7b41e9be3c84" alt="LCD Setup" />
-    <p>The lcd object is created using the I²C address 0x27, and the LCD has 16 columns and 2 rows. Make sure to find your own LCD's address, you can do so by following this guide <a href="INSERTLINK">here</a>.</p>
+    <p>The lcd object is created using the I²C address 0x27, and the LCD has 16 columns and 2 rows. Make sure to find your own LCD's address, you can do so by following this guide <a href="https://github.com/Boonanak/I2C-Device-Address-Finder">here</a>.</p>
 </div>
 <br />
 
