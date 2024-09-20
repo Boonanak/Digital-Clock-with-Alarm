@@ -1,0 +1,111 @@
+include neccesary libraries
+
+init LCD with the correct address
+
+int starttime int
+int activetime int
+int previoustime int to 0
+
+int hours int to 0
+int mins int to 0
+
+int ahours int to 0
+int amins int to 0
+
+void setup
+	init the LCD
+	turn on the backlight
+
+	set serial communication to 9600 baud
+
+	set pin 13 to an input with internal pull up resistor enabled, (active low logic)
+	set pin 11 to an input with internal pull up resistor enabled, (active low logic)
+	set pin 10 to an input with internal pull up resistor enabled, (active low logic)
+	set pin 8 to an input with internal pull up resistor enabled, (active low logic)
+	set pin A0 to an output
+	set pin 9 to an output
+
+	grab the starttime from the number of seconds that have passed since the Arduino started running the program
+void loop
+	while the button connected to pin 8 is pressed
+		set the curser for the LCD to the second row, in the 6th col
+		print "Alarm" to the LCD
+		set the curser for the LCD to the first row, in the 6th col
+
+		if the button connected to pin 11 is pressed
+			increment the amins variable by 1
+		else if the button connected to pin 10 is pressed
+			increment the ahours variable by 1
+		reset the curser for the LCD to the first row, in the 6th col
+
+		if the ahours variable is less than 10
+			print "0" to the LCD
+			print the ahours variable to the LCD
+		else
+			print the ahours variable to the LCD
+
+		print ":" to the LCD
+
+		if the amins varaible is less than 10
+			print "0" to the LCD
+			print the amins varaible to the LCD
+		else
+			print the amins variable to the LCD
+
+		if the amins variable is greater than 59
+			increment the ahours variable by 1
+			reset the amins varaible to 0
+		if the ahours variable is greater than 23
+			reset the ahours variable to 0
+
+		delay 500ms
+		clear the LCD screen
+
+	if the button connected to pin 13 is pressed
+		set the curser for the LCD to the second row, in the 5th col
+		print "Set Time"
+		set the curser for the LCD to the first row, in the 6th col
+
+		if the button connected to pin 11 is pressed
+			increment the mins variable by 1
+		else if the button connected to pin 10 is pressed
+			increment the hours variable by 1
+
+	set the activetime to be how many seconds have passed since the program began running minus the previosuly obtained starttime
+	if the previoustime is less than the activetime minus 59
+		increment the mins variable by 1
+		set the previoustime equal to the activetime
+
+	if the mins variable is greater than 59
+		incrment the hours variable by 1
+		reset the mins variable to 0
+	if the hours variable is greater than 23
+		reset the hours variable to 0
+	reset the curser for the LCD to the first row, in the 6th col
+
+	if the hours variable is less than 10
+		print "0" to the LCD
+		print the hours variable to the LCD
+	else
+		print the hours variable to the LCD
+
+	print ":" to the LCD
+
+	if the mins variable is less than 10
+		print "0" to the LCD
+		print the mins variable to the LCD
+	else
+		print the mins variable to the LCD
+
+	if the ahours equal the hours and the amins equal mins and the amins is not zero
+		play a 1kHz tone for 200ms via the piezo connected to pin 9
+		delay 200ms
+		Stop playing the sound on pin 9
+		delay 200ms
+	else
+		delay 300ms
+	clear the LCD screen
+
+	print neccesary values to the serial monitor
+		
+
